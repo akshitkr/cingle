@@ -79,8 +79,8 @@
 
 
 
-(defun run-c-cpp-code ()
-  "Insert text of current line in vterm and execute."
+(defun cingle ()
+  "Insert current c/c++ file in vterm and compile+run."
   (interactive)
   (require 'vterm)
   (eval-when-compile (require 'subr-x))
@@ -114,6 +114,6 @@
       ))
   )
 
-(provide 'run-c-cpp-code)
+(provide 'cingle)
 
 ;;; cingle.el ends here

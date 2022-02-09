@@ -4,8 +4,17 @@ Currently only works on systems with clang installed and uses the ~vterm~ packag
 
 
 ** Installation:
-Clone the repo to your ~.emacs.d~ or ~.emacs~ and ~require~ it in your init file. Vterm and clang are required for this function to work.
+Clone the repo to your ~.emacs.d~ or ~.emacs~ and ~require~ it in your init file. 
 
+If you use ~use-package~
+
+#+begin_src emacs-lisp 
+  (use-package cingle
+    :straight (:host github :repo "akshitkr/cingle"
+                     :branch "master"))
+#+end_src
+
+should work.
 
 ** Usage
-~run-c-cpp-code~ in a c/c++ buffer should run the file in a vterm window (spawns a new window if there isn't one already).
+~cingle~ in a c/c++ buffer should run the file in a vterm window (spawns a new window if there isn't one already).
