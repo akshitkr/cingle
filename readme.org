@@ -1,0 +1,8 @@
+A simple function which runs c/c++ files on emacs using a single keystroke. Currently only works on systems with clang installed and uses the `vterm` package.
+
+** Installation:
+Clone the repo to your `.emacs.d` or `.emacs` and `require` it in your init file. Vterm and clang are required for this function to work.
+
+
+** Usage
+`run-c-cpp-code` in a c/c++ buffer should run the file in a vterm window (spawns a new window if there isn't one already).
